@@ -1,0 +1,43 @@
+@import '@picocss/pico/css/pico.orange.min.css';
+@import '@fontsource/atkinson-hyperlegible';
+
+:root {
+	--pico-font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+#app {
+	height: 100svh;
+	display: grid;
+	place-content: center;
+}
+
+img,
+video {
+	border-radius: 0.5rem;
+}
+
+.todo-list {
+	ul {
+		padding: 0px;
+
+		li {
+			display: flex;
+			gap: 0.5rem;
+			align-items: center;
+
+			input[type='checkbox'] {
+				aspect-ratio: 1;
+				margin: 0px;
+			}
+
+			input[type='text'] {
+				margin-bottom: 0px;
+			}
+		}
+	}
+
+	.filters {
+		display: flex;
+		gap: 0.5rem;
+	}
+}
