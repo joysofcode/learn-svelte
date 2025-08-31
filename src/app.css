@@ -16,7 +16,157 @@ video {
 	border-radius: 0.5rem;
 }
 
-.todo-list {
+.btn {
+	padding: 0px;
+	background: none;
+	border: none;
+	box-shadow: none;
+}
+
+.editor {
+	width: 600px;
+	height: 300px;
+	padding: 1rem;
+	border-radius: 0.5rem;
+}
+
+.interval {
+	display: flex;
+	align-items: center;
+
+	div {
+		width: 100px;
+		font-size: 2rem;
+		text-align: center;
+	}
+}
+
+.pokemon-search {
+	input {
+		padding: 1rem;
+		border-radius: 1rem;
+	}
+
+	img {
+		width: 200px;
+		display: block;
+		justify-self: center;
+		image-rendering: pixelated;
+	}
+}
+
+.shuffle {
+	text-align: center;
+
+	.items {
+		width: 600px;
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		gap: 0.5rem;
+		color: orangered;
+		font-size: 3rem;
+		font-weight: 700;
+		text-shadow: 2px 2px 0px #000;
+
+		.item {
+			display: grid;
+			place-content: center;
+			aspect-ratio: 1;
+			background: #1a202b;
+			border: 1px solid #232b3a;
+			border-radius: 1rem;
+		}
+	}
+
+	button {
+		margin-top: 1rem;
+		font-size: 2rem;
+	}
+}
+
+.cells {
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	gap: 0.5rem;
+
+	.cell {
+		padding: 1rem;
+		border: 1px solid #ccc;
+	}
+}
+
+.pokemon-details {
+	text-align: center;
+
+	img {
+		width: 200px;
+		display: block;
+		justify-self: center;
+		image-rendering: pixelated;
+	}
+}
+
+.ghost {
+	font-size: 4rem;
+}
+
+.mouse {
+	width: 100svw;
+	height: 100svh;
+	display: grid;
+	place-content: center;
+}
+
+.player {
+	width: 400px;
+
+	video {
+		width: 100%;
+	}
+
+	.controls {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		margin-top: 0.5rem;
+
+		button {
+			padding: 0px;
+			background: none;
+			border: none;
+			box-shadow: none;
+		}
+
+		input[type='range'] {
+			margin: 0px;
+		}
+	}
+}
+
+.textarea {
+	position: relative;
+	display: inline-block;
+	padding: 0.5rem;
+	border: 1px solid orangered;
+
+	.text {
+		font-size: 2rem;
+	}
+
+	.size {
+		position: absolute;
+		left: 50%;
+		bottom: 0px;
+		padding: 0.5rem;
+		translate: -50% 100%;
+		color: black;
+		background: orangered;
+		font-weight: 700;
+		white-space: pre;
+	}
+}
+
+.todos {
 	ul {
 		padding: 0px;
 
@@ -40,4 +190,119 @@ video {
 		display: flex;
 		gap: 0.5rem;
 	}
+}
+
+.accordion {
+	.accordion-item {
+		&:not(:last-child) {
+			margin-bottom: var(--spacing-24);
+		}
+
+		.accordion-heading {
+			display: flex;
+			gap: 2rem;
+			padding: 0px;
+			background: none;
+			box-shadow: none;
+		}
+
+		.accordion-trigger {
+			transition: rotate 0.2s ease;
+
+			&.open {
+				rotate: -90deg;
+			}
+		}
+
+		.accordion-content {
+			margin-top: 0.5rem;
+		}
+	}
+}
+
+.posts {
+	display: flex;
+	gap: 4rem;
+
+	section {
+		display: grid;
+		grid-template-columns: repeat(2, 400px);
+		gap: 2rem;
+		margin: 0px;
+
+		article {
+			margin: 0px;
+		}
+	}
+
+	.archive {
+		section {
+			display: block;
+			width: 240px;
+
+			article {
+				margin-bottom: 1rem;
+			}
+		}
+	}
+}
+
+.message {
+	font-size: 4rem;
+
+	span {
+		display: inline-block;
+	}
+}
+
+.stagger {
+	width: 400px;
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	gap: 1rem;
+}
+
+.box {
+	width: 100px;
+	height: 100px;
+	margin-bottom: 2rem;
+	background-color: orangered;
+	border-radius: 1rem;
+}
+
+.pokemon-data {
+	width: 600px;
+
+	summary {
+		text-transform: capitalize;
+	}
+
+	.data {
+		max-height: 400px;
+		overflow-y: scroll;
+	}
+
+	button {
+		width: 100%;
+	}
+}
+
+.timeline {
+	label {
+		display: flex;
+		gap: 0.5rem;
+	}
+}
+
+body:has(.scroll) {
+	height: 8000px;
+}
+
+.scroll {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+	font-size: 8vw;
+	font-weight: 700;
 }
