@@ -1,6 +1,10 @@
 # Learn Svelte
 
-This is the [Svelte 5 course](https://joyofcode.xyz/learn-svelte) starter. You can find all the code examples from the course on the [examples branch](https://github.com/joysofcode/learn-svelte/tree/examples).
+This is the [Svelte 5 course](https://joyofcode.xyz/learn-svelte) starter.
+
+## Examples
+
+You can find the complete code examples from the course on the [examples branch](https://github.com/joysofcode/learn-svelte/tree/examples).
 
 ## Setup
 
